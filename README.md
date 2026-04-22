@@ -2,7 +2,7 @@
 
 A free frontend-only barcode generator built with React, TypeScript, and Vite.
 
-This tool lets users create barcodes directly in the browser, preview them instantly, and download them as SVG files. It currently supports multiple common barcode formats and runs entirely on the client side without any backend.
+This project allows users to generate barcodes directly in the browser with live preview, format validation, random code generation, and SVG download support. It also includes legal pages and client-side routing for a more complete production-ready setup.
 
 ## Features
 
@@ -11,7 +11,10 @@ This tool lets users create barcodes directly in the browser, preview them insta
 - Download barcode as SVG
 - Generate random sample codes
 - Validation for different barcode formats
-- Frontend-only, no backend required
+- Frontend-only architecture
+- Privacy Policy page
+- Terms of Use page
+- Footer navigation
 - SEO-friendly content structure
 
 ## Supported Barcode Formats
@@ -27,19 +30,22 @@ This tool lets users create barcodes directly in the browser, preview them insta
 - React
 - TypeScript
 - Vite
+- React Router DOM
 - JsBarcode
 - CSS
 
-## How It Works
+## Project Structure
 
-1. Select a barcode format
-2. Enter a barcode value or generate a random one
-3. Preview the barcode instantly
-4. Download the barcode as an SVG file
+```txt
+src/
+  pages/
+    PrivacyPolicy.tsx
+    TermsOfUse.tsx
+  App.tsx
+  main.tsx
+  index.css
 
-## Installation
-
-Clone the repository and install dependencies:
-
-```bash
-npm install
+public/
+  robots.txt
+  sitemap.xml
+  _redirects
